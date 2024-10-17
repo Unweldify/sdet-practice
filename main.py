@@ -3,6 +3,8 @@ import random
 
 
 class Website:
+    version = "1.0.1"
+
     def __init__(self, title: str, session_id: int):
         self._title = title
         self.session_id = session_id
@@ -73,9 +75,9 @@ class RegisterPage(Website):
 
 
 class Redirector(abc.ABC, Website):
-    def __init__(self, session_id: str):
-        self.session_id = session_id
-        self.__csrf_token = self.__token_generate()
+    def __init__(self, title, session_id):
+        super().__init__(title, session_id)
+        
 
     @abc.abstractmethod
     def redirect(self, link: str) -> str:
@@ -83,8 +85,8 @@ class Redirector(abc.ABC, Website):
 
 
 class LoginRedirector(Redirector):
-    def __init__(self, session_id: str, token: str):
-        super().__init__(session_id, token)
+    def __init__(self, title, session_id):
+        super().__init__(title, session_id)
 
     def redirect(self, link: str) -> str:
         return f'redirect:{link}'
@@ -96,6 +98,7 @@ website_name = "Webpage"
 website = Website(website_name, 1)
 log_page = LoginPage(website_name, 1)
 reg_page = RegisterPage(website_name, 1)
+print(website.version)
 
 log_page.title = "Webbypage"
 print(log_page.log_in("User", "Pass"))
@@ -104,3 +107,7 @@ reg_page.title = "Webpaaaage"
 print(reg_page.title)
 print(reg_page.register("ab", "asd", "asdd"))
 print(reg_page.register("ab", "asd", "asd"))
+
+redirect_user = LoginRedirector(website_name, 1)
+print(redirect_user.redirect("profile"))
+print(redirect_user)
