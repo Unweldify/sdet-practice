@@ -2,7 +2,7 @@ import abc
 import random
 
 
-class Website:
+class Website():
     version = "1.0.1"
 
     def __init__(self, title: str, session_id: int):
@@ -34,24 +34,22 @@ class Website:
     def title(self, title: str) -> None:
         self._title = title
 
+    def back(self) -> str:
+        return "redirect:back"
+
 
 class LoginPage(Website):
     def __init__(self, title: str, session_id: int):
         super().__init__(title, session_id)
         self.title = self.title + " - Login"
 
-    @property
-    def title(self) -> str:
-        return self._title
-
-    @title.setter
-    def title(self, title: str) -> None:
-        self._title = title + " - Login"
-
     def log_in(self, username: str, password: str) -> str:
         return f'validate:{username}:{password}:{self.csrf_token}'
         # так как у меня нет целого рабочего сайта 
         # то будет просто возврат данных
+
+    def back(self) -> str:
+        return "redirect:cancelledLogin"
 
 
 class RegisterPage(Website):
@@ -59,25 +57,20 @@ class RegisterPage(Website):
         super().__init__(title, session_id)
         self.title = self.title + " - Register"
 
-    @property
-    def title(self) -> str:
-        return self._title
-
-    @title.setter
-    def title(self, title: str) -> None:
-        self._title = title + " - Register"
-
     def register(self, username: str, password: str, confirm: str) -> str:
         if password == confirm:
             return f'reguser:{username}:{password}:{self.csrf_token}'
         return "Passwords don't match."
         # аналогичная ситуация как и с логином
 
+    def back(self) -> str:
+        return "redirect:cancelledRegister"
+
 
 class Redirector(abc.ABC, Website):
-    def __init__(self, title, session_id):
-        super().__init__(title, session_id)
-        
+    def __init__(self, session_id: str):
+        self.session_id = session_id
+        self.__csrf_token = self.__token_generate()
 
     @abc.abstractmethod
     def redirect(self, link: str) -> str:
@@ -85,8 +78,8 @@ class Redirector(abc.ABC, Website):
 
 
 class LoginRedirector(Redirector):
-    def __init__(self, title, session_id):
-        super().__init__(title, session_id)
+    def __init__(self, session_id: str, token: str):
+        super().__init__(session_id, token)
 
     def redirect(self, link: str) -> str:
         return f'redirect:{link}'
@@ -102,12 +95,10 @@ print(website.version)
 
 log_page.title = "Webbypage"
 print(log_page.log_in("User", "Pass"))
+print(log_page.back())
 
 reg_page.title = "Webpaaaage"
 print(reg_page.title)
 print(reg_page.register("ab", "asd", "asdd"))
 print(reg_page.register("ab", "asd", "asd"))
 
-redirect_user = LoginRedirector(website_name, 1)
-print(redirect_user.redirect("profile"))
-print(redirect_user)
