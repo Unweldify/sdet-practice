@@ -2,7 +2,7 @@ import abc
 import random
 
 
-class Website():
+class Website:
     version = "1.0.1"
 
     def __init__(self, title: str, session_id: int):
