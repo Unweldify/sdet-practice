@@ -1,31 +1,31 @@
-"name","phoneNumber","email","address","userAgent","hexcolor"
-"May Christiansen I","+1 (317) 956-4887","wilkinson.greg@brekke.net","713 Augustus Falls Apt. 819
-Kameronton, AR 64588-1881","Mozilla/5.0 (Macintosh; PPC Mac OS X 10_5_8 rv:5.0; sl-SI) AppleWebKit/533.11.7 (KHTML, like Gecko) Version/4.0 Safari/533.11.7","#4a58ce"
-"Rafael Homenick","+1.502.692.4732","qcollier@friesen.com","88769 Volkman Spring
-Daughertyville, NC 96460","Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/531.23.3 (KHTML, like Gecko) Version/4.0 Safari/531.23.3","#8eb752"
-"Isobel Bode","+1 (349) 247-5947","julio.kris@pacocha.biz","8814 Fernando Stream Suite 871
-North Francesco, ND 09228-3353","Mozilla/5.0 (Windows; U; Windows NT 6.2) AppleWebKit/534.43.4 (KHTML, like Gecko) Version/4.0 Safari/534.43.4","#884356"
-"Brenden Feeney","+1-321-340-4248","michaela18@gmail.com","59609 Hansen Station
-Schillerport, NE 21040","Mozilla/5.0 (Macintosh; PPC Mac OS X 10_5_6 rv:3.0; sl-SI) AppleWebKit/532.15.1 (KHTML, like Gecko) Version/4.0 Safari/532.15.1","#07efff"
-"Serenity Luettgen","+1-375-953-2371","pascale83@hotmail.com","522 Borer Via Apt. 125
-East Timothy, TX 76949-4159","Mozilla/5.0 (Windows; U; Windows NT 5.01) AppleWebKit/531.39.2 (KHTML, like Gecko) Version/4.0 Safari/531.39.2","#6432a9"
-"Millie Schumm","+18283375760","farrell.chadrick@price.net","3618 Fay Drives Apt. 085
-North Stan, NM 35718-9226","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_7 rv:3.0; sl-SI) AppleWebKit/534.44.3 (KHTML, like Gecko) Version/4.0 Safari/534.44.3","#ed21c2"
-"Evan Rolfson DVM","+1-325-902-2830","turcotte.nathaniel@ankunding.net","125 Wisoky Estate Apt. 250
-East Edna, MN 72195-4927","Mozilla/5.0 (Windows; U; Windows NT 4.0) AppleWebKit/531.18.3 (KHTML, like Gecko) Version/4.0 Safari/531.18.3","#91e7cd"
-"Bernadette DuBuque Jr.","+1.308.995.2086","lgutmann@willms.com","204 Gibson Corner Apt. 046
-Rhetthaven, ID 51391","Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_9 rv:2.0; sl-SI) AppleWebKit/532.46.6 (KHTML, like Gecko) Version/4.0 Safari/532.46.6","#ff1c58"
-"Rudy Mueller","+1.619.481.8068","smarvin@hotmail.com","5545 Georgiana Cove
-Lake Maeganmouth, NJ 08688","Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_7 rv:5.0; en-US) AppleWebKit/535.34.7 (KHTML, like Gecko) Version/4.0 Safari/535.34.7","#06a272"
-"Ms. Nannie Corwin IV","+1 (271) 805-8267","kareem13@gmail.com","64105 Raoul Heights
-Hackettside, MD 99667-7218","Mozilla/5.0 (Windows; U; Windows NT 4.0) AppleWebKit/533.2.2 (KHTML, like Gecko) Version/4.0 Safari/533.2.2","#f3e251"
-"Davon Gorczany","+1 (657) 891-8765","savanna.kuhic@gmail.com","73019 Hyatt Groves Apt. 631
-Lake Lukasmouth, WY 93339","Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_6 rv:6.0; en-US) AppleWebKit/534.19.2 (KHTML, like Gecko) Version/4.0 Safari/534.19.2","#21c1df"
-"Reyna Stoltenberg","+1-454-696-4743","remington43@gmail.com","828 Kianna Fort
-Colliertown, RI 85440","Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_7 rv:4.0; sl-SI) AppleWebKit/535.6.5 (KHTML, like Gecko) Version/4.0 Safari/535.6.5","#bdd2a3"
-"Camryn Paucek","+15218573577","demarcus.brakus@marquardt.net","99939 Jeffry Mission
-Lake Sydniebury, TX 79570-6475","Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2 rv:5.0; sl-SI) AppleWebKit/534.34.2 (KHTML, like Gecko) Version/4.0 Safari/534.34.2","#d82b21"
-"Jena Greenfelder","+1-382-858-7870","hschumm@grady.biz","8267 Upton Plaza Apt. 429
-New Trisha, SC 74654","Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_9 rv:3.0; sl-SI) AppleWebKit/534.5.4 (KHTML, like Gecko) Version/4.0 Safari/534.5.4","#3b1d34"
-"Prof. Bernardo Frami","+17076727145","ulises00@greenfelder.org","945 Lavern Mount Suite 279
-Port Ceceliaberg, VA 42063","Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_3 rv:5.0; sl-SI) AppleWebKit/535.48.1 (KHTML, like Gecko) Version/4.0 Safari/535.48.1","#bef447"
+"name","email","address"
+"May Christiansen I","wilkinson.greg@brekke.net","713 Augustus Falls Apt. 819
+Kameronton, AR 64588-1881"
+"Rafael Homenick","qcollier@friesen.com","88769 Volkman Spring
+Daughertyville, NC 96460"
+"Isobel Bode","julio.kris@pacocha.biz","8814 Fernando Stream Suite 871
+North Francesco, ND 09228-3353"
+"Brenden Feeney","michaela18@gmail.com","59609 Hansen Station
+Schillerport, NE 21040"
+"Serenity Luettgen","pascale83@hotmail.com","522 Borer Via Apt. 125
+East Timothy, TX 76949-4159"
+"Millie Schumm","farrell.chadrick@price.net","3618 Fay Drives Apt. 085
+North Stan, NM 35718-9226"
+"Evan Rolfson DVM","turcotte.nathaniel@ankunding.net","125 Wisoky Estate Apt. 250
+East Edna, MN 72195-4927"
+"Bernadette DuBuque Jr.","lgutmann@willms.com","204 Gibson Corner Apt. 046
+Rhetthaven, ID 51391"
+"Rudy Mueller","smarvin@hotmail.com","5545 Georgiana Cove
+Lake Maeganmouth, NJ 08688"
+"Ms. Nannie Corwin IV","kareem13@gmail.com","64105 Raoul Heights
+Hackettside, MD 99667-7218"
+"Davon Gorczany","savanna.kuhic@gmail.com","73019 Hyatt Groves Apt. 631
+Lake Lukasmouth, WY 93339"
+"Reyna Stoltenberg","remington43@gmail.com","828 Kianna Fort
+Colliertown, RI 85440"
+"Camryn Paucek","demarcus.brakus@marquardt.net","99939 Jeffry Mission
+Lake Sydniebury, TX 79570-6475"
+"Jena Greenfelder","hschumm@grady.biz","8267 Upton Plaza Apt. 429
+New Trisha, SC 74654"
+"Prof. Bernardo Frami","ulises00@greenfelder.org","945 Lavern Mount Suite 279
+Port Ceceliaberg, VA 42063"
