@@ -11,19 +11,15 @@ def read_json_data(json_file: str) -> List[Dict[str, Any]]:
 
     with open(json_file, "r") as file:
         user_data = json.load(file)
-        file.close()
 
     return user_data
 
 
 def filter_data(user_data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    user_data = [
-        user for user in user_data
-        if (user["phoneNumber"].startswith("+1") or user["phoneNumber"].startswith("+1"))
-        and "4.0 Safari" in user["userAgent"]
-    ]
-
-    return user_data
+    for user in user_data:
+        if (user["phoneNumber"].startswith("+1") or
+            user["phoneNumber"].startswith("1")) and "4.0 Safari" in user["userAgent"]:
+            yield user
 
 
 def write_to_csv(user_data: List[Dict[str, Any]]) -> None:
