@@ -74,21 +74,25 @@
 		{
 			"name": "Task 2",
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"id\": {{pet_id}},\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"Шиншиллка\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Chinchi",
+							"type": "text"
 						}
-					}
+					]
 				},
 				"url": {
-					"raw": "{{base_url}}{{add_path}}pet",
+					"raw": "{{base_url}}{{add_path}}pet/{{pet_id}}",
 					"host": [
 						"{{base_url}}{{add_path}}pet"
+					],
+					"path": [
+						"{{pet_id}}"
 					]
 				}
 			},
