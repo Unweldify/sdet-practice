@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "eb453d66-eaae-42d5-86fb-aa14c90def2b",
+		"name": "Unweldify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39881234"
+	},
+	"item": [
+		{
+			"name": "Task 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonPet = pm.response.json();\r",
+							"console.log(jsonPet.id)\r",
+							"pm.environment.set(\"pet_id\", jsonPet.id);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"Chinchilla\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}{{add_path}}pet",
+					"host": [
+						"{{base_url}}{{add_path}}pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}{{add_path}}pet/{{pet_id}}",
+					"host": [
+						"{{base_url}}{{add_path}}pet"
+					],
+					"path": [
+						"{{pet_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Chinchi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}{{add_path}}pet/{{pet_id}}",
+					"host": [
+						"{{base_url}}{{add_path}}pet"
+					],
+					"path": [
+						"{{pet_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "additionalMetadata",
+							"value": "image",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/AILAL/Downloads/image.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}{{add_path}}pet/{{pet_id}}/uploadImage",
+					"host": [
+						"{{base_url}}{{add_path}}pet"
+					],
+					"path": [
+						"{{pet_id}}",
+						"uploadImage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
